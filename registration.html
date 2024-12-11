@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Kake'es Store</title>
+    <link rel="stylesheet" href="css/registration.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1 class="site-title">Kake'es Store</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="cakes.html">Cakes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="registration.html" class="active">Register</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="registration-form">
+    <h2>Register for a Cake</h2>
+    <p class="intro-text">Fill in your details to place an order. We’ll get back to you with a delicious experience!</p>
+
+    <form action="php/create.php" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="text" name="phone" placeholder="Phone Number" required>
+        <input type="text" name="cake_type" placeholder="Type of Cake" required>
+        <textarea name="description" placeholder="Description of the cake" rows="4"></textarea>
+        <input type="date" name="delivery_date" placeholder="Delivery Date" required>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Kake'es Store | Designed with ❤️</p>
+</footer>
+<script src="js/registration.js"></script>
+</body>
+</html>
